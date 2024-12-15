@@ -1,0 +1,123 @@
+﻿@model PrinterInput
+
+@{
+    ViewBag.Title = "Print2";
+}
+
+@{
+    ViewData["Title"] = "ShowImagesFromFolder";
+}
+
+<form class="row position-fixed" method="post" enctype="multipart/form-data">
+    <div class="col-1" style="width:370px; height:755px; padding:20px 20px 20px 20px; border:1px solid #ababab">
+        <div class="btn-group" role="group">
+            <a asp-controller="Home" asp-action="Index" class="btn" style="padding:0px 0px 0px 20px">
+                <img style="height:60px; width:60px" src="@Url.Content("~/Images/printer.png")" />
+            </a>
+
+            <a asp-controller="Home" asp-action="Index" class="btn">
+                <b style="color:#666666; font-size:24px; text-align:center; padding:0px">smart</b>
+                <i style="color:#fabc02; font-size:18px; text-align:center; padding:0px">printing service</i>
+            </a>
+        </div>
+
+        <a asp-controller="Student" asp-action="Dashboard" class="btn" style="width:150px; height:40px; margin:30px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px">
+                <i class="bi bi-person-circle"></i> Dashboard
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Print" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <b style="display:inline-block; color:#666666; font-size:18px; padding:0px 50px 0px 0px">
+                <i class="bi bi-folder2"></i> Print
+            </b>
+        </a>
+        <a asp-controller="Student" asp-action="ViewHistory1" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-skip-start"></i> History
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Notification" class="btn" style="width:160px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 2px 0px 0px">
+                <i class="bi bi-bell"></i> Notification
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Setting_profile" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-gear"></i> Setting
+            </p>
+        </a>
+
+        <div style="margin:250px 0px 0px 10px; border:3px solid #ababab; border-radius:10px; width:320px; height:95px">
+            <img style="width:90px; height:90px; margin-bottom:40px; border-radius:8px; display:inline-block" src="https://www.theemotionmachine.com/wp-content/uploads/2021/03/53d05da0-19c1-48f8-ac0d-9a57498a4697.jpeg" />
+            <div class="" style="display:inline-block; margin-top:10px">
+                <p style="font-weight:600; color:#ababab; font-size:18px; padding:0px 0px 0px 10px">
+                    Dat Nguyen
+                </p>
+
+                <p style="font-weight:600; color:#ababab; font-size:10px; padding:0px 0px 0px 10px">
+                    dat.nguyentrinh@hcmut.edu.vn
+                </p>
+            </div> <i class="bi bi-box-arrow-right col-1" style="color:#ababab; font-size:60px"></i>
+        </div>
+    </div>
+
+    <div class="col-1" style="width:1100px">
+        <div style="color:#666666; font-size:30px; font-weight:600; margin-left:12px; margin-top:25px">
+            Printing service
+        </div>
+        <ul style="display:inline-flex; list-style:none; margin: 0px 0px 0px -20px">
+            <li class="bi bi-check-circle-fill" style="color:#fabc02; font-size:50px"></li>
+            <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Upload the document</li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+            
+            <li class="bi bi-2-circle" style="color:#666666; font-size:50px; margin-left:10px"></li>
+            <li style="font-size:18px; color:#666666; font-weight:600; margin:25px 0px 0px 10px">Print configuration</li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+            
+            <li class="bi bi-3-circle" style="color:#ababab; font-size:50px; margin-left:10px"></li>
+            <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Printer location & time</li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+            
+            <li class="bi bi-4-circle" style="color:#ababab; font-size:50px; margin-left:10px"></li>
+            <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Preview</li>
+        </ul>
+
+        <div style="margin:25px 0px 0px 12px">
+            <b style="color:#666666; font-size:18px">
+                Campus
+            </b>
+            
+        </div>
+        <select name="campus" style="border:solid 1px #ababab; width:600px; height:50px; border-radius:10px; margin:15px 0px 0px 12px">
+            <option hidden selected>--select--</option>
+            <option value="1">Campus 1</option>
+            <option value="2">Campus 2</option>
+        </select>
+        
+        <div style="margin:25px 0px 0px 12px">
+            <b style="color:#666666; font-size:18px">
+                Printer
+            </b>
+
+        </div>
+        <select asp-for="printer" asp-items="Model.Printers" style="border:solid 1px #ababab; width:600px; height:50px; border-radius:10px; margin:15px 0px 0px 12px"><option hidden selected>--select--</option></select>
+
+        @*<select name="printer" style="border:solid 1px #ababab; width:600px; height:50px; border-radius:10px; margin:15px 0px 0px 12px">
+            <option hidden selected>--select--</option>
+            <option value="1">HP Color LaserJet Pro</option>
+            <option value="2">Brother MFC-J23188WC</option>
+            <option value="3">HP DeskJet 2440</option>
+        </select>*@
+
+        <div class="btn-group" role="group" style="margin:60px 0px 0px 311px">
+            <a asp-controller="Student" asp-action="UploadFile" type="" class="btn" style="background-color:white; border:2px solid; border-color:#fabc02; width:152px; height:50px; border-radius:10px">
+                <p class="" style="color:#fabc02; text-align:center; font-size:15px; padding:5px 0px">Previous step</p>
+            </a>
+            <a style="width:20px"></a>
+            <input type="submit" value="Next step" class="btn btn-primary" style="background-color:#fabc02; width:130px; height:50px; border-radius:10px; color:white; text-align:center; font-size:15px; padding:6px 0px; border:none" />
+        </div>
+    </div>
+</form>

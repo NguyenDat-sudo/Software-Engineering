@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "ShowImagesFromFolder";
+}
+
+<form class="position-fixed" method="post" enctype="multipart/form-data" style="background-color:#fabc02; height:740px; width:1540px">
+    <div style="background-color:white; width:500px; height:500px; border-radius:30px; margin-top:118px; margin-left:534px">
+        <p style="display:inline-block; font-weight:600; color:#666666; font-size:36px; margin-top:70px; margin-left:140px">Choose a file</p>
+        <a class="btn" style="width:434px; margin-left:33px; height:314px; border-radius:20px;  border:2px dashed #ababab">
+            <i class="bi bi-file-earmark-plus" style="font-size:70px; color:#666666"></i>
+            <input type="file" name="file" class="form-control" style="font-weight:600; color:#666666; font-size:16px; width:250px; margin-left:80px; margin-top:20px" />
+            <div class="mb-3"><input type="submit" value="Upload File" class="btn btn-primary" style="background-color:#fabc02; border:none; margin-top:20px"/></div>
+            <span class="text-success">@ViewBag.Message</span>
+            <p style="color:#ababab; font-size:18px">Accepted file type: doc, pdf, ppt</p>
+        </a>
+    </div>
+</form>

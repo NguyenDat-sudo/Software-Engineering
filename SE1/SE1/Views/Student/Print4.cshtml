@@ -1,0 +1,173 @@
+﻿@{
+    ViewBag.Title = "Print4";
+    var TempDate = TempData["date"];
+    var TempPrinter = TempData["printer"];
+    var TempPaper = TempData["pageRange"];
+    var TempDocumentName = TempData["fileName"];
+    var TempType = TempData["type"];
+}
+
+@{
+    ViewData["Title"] = "ShowImagesFromFolder";
+}
+
+<form class="row position-fixed" method="post">
+    <div class="col-1" style="width:370px; height:755px; padding:20px 20px 20px 20px; border:1px solid #ababab">
+        <div class="btn-group" role="group">
+            <a asp-controller="Home" asp-action="Index" class="btn" style="padding:0px 0px 0px 20px">
+                <img style="height:60px; width:60px" src="@Url.Content("~/Images/printer.png")" />
+            </a>
+
+            <a asp-controller="Home" asp-action="Index" class="btn">
+                <b style="color:#666666; font-size:24px; text-align:center; padding:0px">smart</b>
+                <i style="color:#fabc02; font-size:18px; text-align:center; padding:0px">printing service</i>
+            </a>
+        </div>
+
+        <a asp-controller="Student" asp-action="Dashboard" class="btn" style="width:150px; height:40px; margin:30px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px">
+                <i class="bi bi-person-circle"></i> Dashboard
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Print" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <b style="display:inline-block; color:#666666; font-size:18px; padding:0px 50px 0px 0px">
+                <i class="bi bi-folder2"></i> Print
+            </b>
+        </a>
+        <a asp-controller="Student" asp-action="ViewHistory1" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-skip-start"></i> History
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Notification" class="btn" style="width:160px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 2px 0px 0px">
+                <i class="bi bi-bell"></i> Notification
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Setting_Profile" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-gear"></i> Setting
+            </p>
+        </a>
+
+        <div style="margin:250px 0px 0px 10px; border:3px solid #ababab; border-radius:10px; width:320px; height:95px">
+            <img style="width:90px; height:90px; margin-bottom:40px; border-radius:8px; display:inline-block" src="https://www.theemotionmachine.com/wp-content/uploads/2021/03/53d05da0-19c1-48f8-ac0d-9a57498a4697.jpeg" />
+            <div class="" style="display:inline-block; margin-top:10px">
+                <p style="font-weight:600; color:#ababab; font-size:18px; padding:0px 0px 0px 10px">
+                    Dat Nguyen
+                </p>
+
+                <p style="font-weight:600; color:#ababab; font-size:10px; padding:0px 0px 0px 10px">
+                    dat.nguyentrinh@hcmut.edu.vn
+                </p>
+            </div> <i class="bi bi-box-arrow-right col-1" style="color:#ababab; font-size:60px"></i>
+        </div>
+    </div>
+
+    <div class="col-1" style="width:1100px">
+        <div style="color:#666666; font-size:30px; font-weight:600; margin-left:12px; margin-top:25px">
+            Printing service
+        </div>
+        <ul style="display:inline-flex; list-style:none; margin: 0px 0px 0px -20px">
+            <li class="bi bi-check-circle-fill" style="color:#fabc02; font-size:50px"></li>
+            <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Upload the document</li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+
+            <li class="bi bi-check-circle-fill" style="color:#fabc02; font-size:50px; margin-left:10px"></li>
+            <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Print configuration</li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+
+            <li class="bi bi-check-circle-fill" style="color:#fabc02; font-size:50px; margin-left:10px"></li>
+            <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Printer location & time</li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+
+            <li class="bi bi-4-circle" style="color:#666666; font-size:50px; margin-left:10px"></li>
+            <li style="font-size:18px; color:#666666; font-weight:600; margin:25px 0px 0px 10px">Preview</li>
+        </ul>
+        <div style="color:#666666; font-size:30px; font-weight:600; margin-left:12px; margin-top:25px">
+            Request review
+        </div>
+        
+        <ul class="list-group-horizontal" style="margin: 20px 0px 0px 0px">
+            <li style="display:inline-block; margin:0px 0px 0px 0px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Date
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 55px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Printer
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 55px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Paper
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 55px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Document name
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 55px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Type
+                </p>
+            </li>
+        </ul>
+
+        <ul class="list-group-horizontal" style="margin: 10px 0px 0px 0px">
+            <li style="display:inline-block; margin:0px 0px 0px 0px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    @TempDate
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px -7px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    @TempPrinter
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 10px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    @TempPaper
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 0px; width:150px">
+                <p style="color:#666666; font-size:12px">
+                    @TempDocumentName
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 0px; width:200px">
+                <p style="color:#666666; font-size:12px">
+                    @TempType
+                </p>
+            </li>
+        </ul>
+
+        <div class="card-img-overlay" style="display:flex;flex-direction:column;gap:20px;color:#666666; font-size:30px; font-weight:600; margin:150px 0px 0px 1120px">
+           Paper balance
+        </div>
+
+        <div class="card-img-overlay" style="margin:220px 0px 0px 1130px; display:inline-block; background-color:#f8ffcc; width:320px; height:115px; border-radius:20px">
+            <p style="color:#03B91E; font-size:50px; margin:5px 0px 0px 20px">
+                <i class="bi bi-files"></i>
+            </p>
+            <b class="card-img-overlay" style="color:#666666; font-size:30px; margin:5px 0px 0px 80px">15</b>
+            <p class="card-img-overlay" style="color:#666666; font-size:15px; margin:45px 0px 0px 80px">paper sheets left</p>
+        </div>
+        <div class="btn-group" role="group" style="margin:120px 0px 0px 608px">
+            <a href="https://bkpay.hcmut.edu.vn/bkpay/home.action" class="btn" style="background-color:white; border:2px solid; border-color:#fabc02; width:152px; height:50px; border-radius:10px">
+                <p class="" style="color:#fabc02; text-align:center; font-size:15px; padding:5px 0px">Buy more paper</p>
+            </a>
+            <a style="width:20px"></a>
+            <a asp-controller="Student" asp-action="Print3" class="btn" style="background-color:white; border:2px solid; border-color:#fabc02; width:152px; height:50px; border-radius:10px">
+                <p class="" style="color:#fabc02; text-align:center; font-size:15px; padding:5px 0px">Previous step</p>
+            </a>
+            <a style="width:20px"></a>
+            <input type="submit" value="Send request" class="btn btn-primary" style="width:130px; height: 47px; padding-top: 5px; color:white;border-radius:8px; font-size:15px; background-color:#fabc02; border:none" />
+        </div>
+    </div>
+</form>

@@ -1,0 +1,129 @@
+﻿
+
+@{
+    ViewData["Title"] = "ShowImagesFromFolder";
+}
+
+
+<div class="row position-fixed">
+    <div class="col-1" style="width:370px; height:755px; padding:20px 20px 20px 20px; border:1px solid #ababab">
+        <div class="btn-group" role="group">
+            <a asp-controller="Home" asp-action="Index" class="btn" style="padding:0px 0px 0px 20px">
+                <img style="height:60px; width:60px" src="@Url.Content("~/Images/printer.png")" />
+            </a>
+
+            <a asp-controller="Home" asp-action="Index" class="btn">
+                <b style="color:#666666; font-size:24px; text-align:center; padding:0px">smart</b>
+                <i style="color:#fabc02; font-size:18px; text-align:center; padding:0px">printing service</i>
+            </a>
+        </div>
+
+        <a asp-controller="Student" asp-action="Dashboard" class="btn" style="width:150px; height:40px; margin:30px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px">
+                <i class="bi bi-person-circle"></i> Dashboard
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Print" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 50px 0px 0px">
+                <i class="bi bi-folder2"></i> Print
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="ViewHistory1" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-skip-start"></i> History
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Notification" class="btn" style="width:160px; height:40px; margin:10px 0px 0px 20px">
+            <b style="display:inline-block; color:#666666; font-size:18px; padding:0px 2px 0px 0px">
+                <i class="bi bi-bell"></i> Notification
+            </b>
+        </a>
+        <a asp-controller="Student" asp-action="Setting_Profile" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-gear"></i> Setting
+            </p>
+        </a>
+
+        <div style="margin:270px 0px 0px 10px; border:3px solid #ababab; border-radius:10px; width:320px; height:95px">
+            <img style="width:90px; height:90px; margin-bottom:40px; border-radius:8px; display:inline-block" src="https://www.theemotionmachine.com/wp-content/uploads/2021/03/53d05da0-19c1-48f8-ac0d-9a57498a4697.jpeg" />
+            <div class="" style="display:inline-block; margin-top:10px">
+                <p style="font-weight:600; color:#ababab; font-size:18px; padding:0px 0px 0px 10px">
+                    Dat Nguyen
+                </p>
+
+                <p style="font-weight:600; color:#ababab; font-size:10px; padding:0px 0px 0px 10px">
+                    dat.nguyentrinh@hcmut.edu.vn
+                </p>
+            </div> <i class="bi bi-box-arrow-right col-1" style="color:#ababab; font-size:60px"></i>
+        </div>
+
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content" style="flex: 1; padding: 20px; box-sizing: border-box;">
+        <h1 style="font-size: 24px; color: #333333; font-weight: bold; margin-bottom: 30px;">Notification</h1>
+        <div style="display: flex; gap: 20px;">
+            <!-- Notifications List -->
+            <div style="width: 40%; display: flex; flex-direction: column; gap: 20px;">
+                <!-- Notification Item 1 -->
+                <div id="notification-1"
+                     style="border: 1px solid #d9d9d9;
+                        padding: 15px;
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        background-color: #f8f8f8;
+                        cursor: pointer;">
+                    <i class="bi bi-info-circle" style="font-size: 24px; color: #007bff; margin-right: 15px;"></i>
+                    <div style="flex: 1;">
+                        <p style="font-size: 16px; margin: 0; font-weight: bold; color: #333;">Your document is ready to be printed.</p>
+                        <p style="font-size: 14px; margin: 5px 0 0; color: #666;">"data structures and algorithms" is ready to be printed...</p>
+                    </div>
+                    <button class="btn" style="background: none; border: none; font-size: 16px; color: #999; cursor: pointer;">✕</button>
+                </div>
+
+                <!-- Notification Item 2 -->
+                <div id="notification-2"
+                     style="border: 1px solid #d9d9d9;
+                        padding: 15px;
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        background-color: #f8f8f8;
+                        cursor: pointer;">
+                    <i class="bi bi-info-circle" style="font-size: 24px; color: #007bff; margin-right: 15px;"></i>
+                    <div style="flex: 1;">
+                        <p style="font-size: 16px; margin: 0; font-weight: bold; color: #333;">Your document is ready to be printed.</p>
+                        <p style="font-size: 14px; margin: 5px 0 0; color: #666;">"computer networking: a top-down approach" is ready to be printed...</p>
+                        <div style="margin-top: 10px; display: flex; gap: 10px;">
+                            <button style="padding: 8px 15px; font-size: 12px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">View all</button>
+                            <button style="padding: 8px 15px; font-size: 12px; background-color: #6c757d; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Mark as read</button>
+                        </div>
+                    </div>
+                    <button class="btn" style="background: none; border: none; font-size: 16px; color: #999; cursor: pointer;">✕</button>
+                </div>
+            </div>
+
+            <!-- Notification Details -->
+            <div style="width: 40%;
+                    border: 1px solid #d9d9d9;
+                    border-radius: 8px;
+                    padding: 20px;
+                    background-color: #f8f8f8;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 125px;">
+                <h2 style="font-size: 16px; font-weight: bold; margin: 0;">Your document is ready to be printed.</h2>
+                <p style="font-size: 14px; color: #666; margin: 10px 0;">"data structures and algorithms" is ready to be printed. Go to "Print" to check and print your document.</p>
+                <div style="display: flex; justify-content: flex-end; gap: 10px;">
+                    <button style="padding: 8px 15px; font-size: 12px; background-color: #6c757d; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Hide</button>
+                    <button style="padding: 8px 15px; font-size: 12px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Mark as unread</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+

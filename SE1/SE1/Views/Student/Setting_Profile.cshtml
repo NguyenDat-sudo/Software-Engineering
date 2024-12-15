@@ -1,0 +1,151 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewData["Title"] = "ShowImagesFromFolder";
+}
+
+<div class="row" style="display: flex; width: 100%; margin: 0; padding: 0; box-sizing: border-box;">
+    <div class="col-1" style="width:370px; height:755px; padding:20px 20px 20px 20px; border:1px solid #ababab">
+        <div class="btn-group" role="group">
+            <a asp-controller="Home" asp-action="Index" class="btn" style="padding:0px 0px 0px 20px">
+                <img style="height:60px; width:60px" src="@Url.Content("~/Images/printer.png")" />
+            </a>
+
+            <a asp-controller="Home" asp-action="Index" class="btn">
+                <b style="color:#666666; font-size:24px; text-align:center; padding:0px">smart</b>
+                <i style="color:#fabc02; font-size:18px; text-align:center; padding:0px">printing service</i>
+            </a>
+        </div>
+
+        <a asp-controller="Student" asp-action="Dashboard" class="btn" style="width:150px; height:40px; margin:30px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px">
+                <i class="bi bi-person-circle"></i> Dashboard
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Print" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 50px 0px 0px">
+                <i class="bi bi-folder2"></i> Print
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="ViewHistory1" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-skip-start"></i> History
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Notification" class="btn" style="width:160px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 2px 0px 0px">
+                <i class="bi bi-bell"></i> Notification
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Setting_Profile" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <b style="display:inline-block; color:#666666; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-gear"></i> Setting
+            </b>
+        </a>
+
+        <div style="margin:270px 0px 0px 10px; border:3px solid #ababab; border-radius:10px; width:320px; height:95px">
+            <img style="width:90px; height:90px; margin-bottom:40px; border-radius:8px; display:inline-block" src="https://www.theemotionmachine.com/wp-content/uploads/2021/03/53d05da0-19c1-48f8-ac0d-9a57498a4697.jpeg" />
+            <div class="" style="display:inline-block; margin-top:10px">
+                <p style="font-weight:600; color:#ababab; font-size:18px; padding:0px 0px 0px 10px">
+                    Dat Nguyen
+                </p>
+
+                <p style="font-weight:600; color:#ababab; font-size:10px; padding:0px 0px 0px 10px">
+                    dat.nguyentrinh@hcmut.edu.vn
+                </p>
+            </div> <i class="bi bi-box-arrow-right col-1" style="color:#ababab; font-size:60px"></i>
+        </div>
+
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="center-column" style="flex: 1; padding: 20px; text-align: left;">
+        <h1 style="font-size: 24px; color: #333333; font-weight: bold; margin-bottom: 30px;">Setting</h1>
+        <div style="display: flex; gap: 20px;">
+            <!-- User Information -->
+            <div style="flex: 1;">
+                <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px;">
+                    <img src="https://www.theemotionmachine.com/wp-content/uploads/2021/03/53d05da0-19c1-48f8-ac0d-9a57498a4697.jpeg" style="width:100px; height:100px; border-radius:8px;" alt="User Avatar" />
+                    <div>
+                        <p style="font-size: 18px; font-weight: bold;">Dat Nguyen</p>
+                        <p style="font-size: 14px; color: #888888;">Student</p>
+                        <p style="font-size: 14px; color: #888888;">dat.nguyentrinh@hcmut.edu.vn</p>
+                    </div>
+                </div>
+                <a asp-controller="Student" asp-action="Setting_ChangePassword" class="btn" style="background-color:#fabc02; width:150px; height:40px; border-radius:10px; margin:10px 0px 0px 0px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)">
+                    <b class="" style="color:white; text-align:center; font-size:14px; padding:8px 0px">Change password</b>
+                </a>
+
+                <div style="margin-top: 50px;">
+                    <div style="margin-top: 50px; display: flex; gap: 40px;">
+                        <!-- Left Column -->
+                        <div style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+                            <!-- First Name -->
+                            <div style="display: flex; flex-direction: column;">
+                                <label style="font-size: 14px; color: #666666; margin-bottom: 5px;font-weight: bold;">First Name</label>
+                                <input type="text" placeholder="Nguyen" style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; font-size: 14px;" />
+                            </div>
+
+                            <!-- Student ID -->
+                            <div style="display: flex; flex-direction: column;">
+                                <label style="font-size: 14px; color: #666666; margin-bottom: 5px;font-weight: bold;">Student ID</label>
+                                <input type="text" placeholder="2252147" style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; font-size: 14px;" />
+                            </div>
+
+                            <!-- Password -->
+                            <div style="display: flex; flex-direction: column;">
+                                <label style="font-size: 14px; color: #666666; margin-bottom: 5px;font-weight: bold;">Password</label>
+                                <input type="password" placeholder="*********" style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; font-size: 14px;" />
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+                            <!-- Last Name -->
+                            <div style="display: flex; flex-direction: column;">
+                                <label style="font-size: 14px; color: #666666; margin-bottom: 5px;font-weight: bold;">Last Name</label>
+                                <input type="text" placeholder="Dat" style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; font-size: 14px;" />
+                            </div>
+
+                            <!-- Email -->
+                            <div style="display: flex; flex-direction: column;">
+                                <label style="font-size: 14px; color: #666666; margin-bottom: 5px;font-weight: bold;">Email</label>
+                                <input type="email" placeholder="dat.nguyentrinh1801@hcmut.edu.vn" style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; font-size: 14px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Save Button -->
+                </div>
+
+
+            </div>
+
+
+            <!-- Transaction Container -->
+            <div style="width: 300px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                <!-- Transaction Section -->
+                <div style="height: 70%; width: 100%; padding: 20px; background-color: #fffbea; border-radius: 10px; border: 1px solid #e0e0e0; text-align: left;">
+                    <h2 style="font-size: 18px; font-weight: bold; color: #333333; margin-bottom: 10px;">My transaction</h2>
+                    <p style="font-size: 14px; color: #999999; margin: 0;">Since 1/1/2024</p>
+                    <div style="margin-top: 15px;">
+                        <p style="font-size: 16px; margin: 0; color: #333333;">Paper sheets: <span style="font-weight: bold; color: #fabc02;">-38</span></p>
+                        <p style="font-size: 16px; margin: 0; color: #333333;">Request made: <span style="font-weight: bold;">7</span></p>
+                        <p style="font-size: 16px; margin: 0; color: #333333;">Transaction: <span style="font-weight: bold; color: #fabc02;">-38.000đ</span></p>
+                    </div>
+                </div>
+
+                <!-- Paper Sheets Left Section -->
+                <div style="height: 100px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #e8f5e9; border-radius: 10px; border: 1px solid #c8e6c9; text-align: center;">
+                    <p style="font-size: 36px; font-weight: bold; color: #4caf50; margin: 0;">15</p>
+                    <p style="font-size: 16px; color: #333333; margin: 0;">paper sheets left</p>
+                </div>
+
+                <a asp-controller="Student" asp-action="Setting_ChangeMoney" class="btn" style="background-color:#fabc02; width:150px; height:45px; border-radius:10px; margin:10px 0px 0px 0px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)">
+                    <b class="" style="color:white; text-align:center; font-size:14px; padding:8px 0px">Buy more paper</b>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+

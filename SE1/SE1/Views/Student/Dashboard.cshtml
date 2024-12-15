@@ -1,0 +1,352 @@
+﻿@model List<Request>
+
+@{
+    ViewData["Title"] = "ShowImagesFromFolder";
+}
+
+<div class="row position-fixed">
+    <div class="col-1" style="width:370px; height:755px; padding:20px 20px 20px 20px; border:1px solid #ababab">
+        <div class="btn-group" role="group">
+            <a asp-controller="Home" asp-action="Index" class="btn" style="padding:0px 0px 0px 20px">
+                <img style="height:60px; width:60px" src="@Url.Content("~/Images/printer.png")" />
+            </a>
+
+            <a asp-controller="Home" asp-action="Index" class="btn">
+                <b style="color:#666666; font-size:24px; text-align:center; padding:0px">smart</b>
+                <i style="color:#fabc02; font-size:18px; text-align:center; padding:0px">printing service</i>
+            </a>
+        </div>
+
+        <a asp-controller="Student" asp-action="Dashboard" class="btn" style="width:150px; height:40px; margin:30px 0px 0px 20px">
+            <b style="display:inline-block; color:#666666; font-size:18px">
+                <i class="bi bi-person-circle"></i> Dashboard
+            </b>
+        </a>
+        <a asp-controller="Student" asp-action="Print" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 50px 0px 0px">
+                <i class="bi bi-folder2"></i> Print
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="ViewHistory1" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-skip-start"></i> History
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Notification" class="btn" style="width:160px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 2px 0px 0px">
+                <i class="bi bi-bell"></i> Notification
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Setting_Profile" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-gear"></i> Setting
+            </p>
+        </a>
+
+        <div style="margin:270px 0px 0px 10px; border:3px solid #ababab; border-radius:10px; width:320px; height:95px">
+            <img style="width:90px; height:90px; margin-bottom:40px; border-radius:8px; display:inline-block" src="https://www.theemotionmachine.com/wp-content/uploads/2021/03/53d05da0-19c1-48f8-ac0d-9a57498a4697.jpeg" />
+            <div class="" style="display:inline-block; margin-top:10px">
+                <p style="font-weight:600; color:#ababab; font-size:18px; padding:0px 0px 0px 10px">
+                    Dat Nguyen
+                </p>
+
+                <p style="font-weight:600; color:#ababab; font-size:10px; padding:0px 0px 0px 10px">
+                    dat.nguyentrinh@hcmut.edu.vn
+                </p>
+            </div> <i class="bi bi-box-arrow-right col-1" style="color:#ababab; font-size:60px"></i>
+        </div>
+
+    </div>
+
+    <div class="col-1" style="width:780px; height:755px">
+        <div class="container">
+            <img style="margin: -170px 0px 0px 190px; display:inline-block; transform:rotate(270deg); height:745px; width:350px; border-radius:20px" src="@Url.Content("~/Images/tải xuống.jpg")" />
+            <p class="card-img-overlay" style="color:white; font-size:30px; font-weight:600; margin: 50px 0px 0px 440px">Welcome back</p>
+            <p class="card-img-overlay" style="color:white; font-size:64px; font-weight:600; margin: 80px 0px 0px 440px">Dat Nguyen</p>
+            <i class="card-img-overlay" style="color:white; font-size:16px; font-weight:600; margin: 190px 0px 0px 440px">Prepare for your lecture thoroughtly</i>
+        </div>
+
+        <p class="card-img-overlay" style="color:#666666; font-size:24px; font-weight:600; margin: 370px 0px 0px 370px">Recent request</p>
+
+        <table class="table table-bordered table-striped" style="margin-top:-150px">
+            <thead>
+                <tr>
+                    <th>
+                        Request ID
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Paper
+                    </th>
+                    <th>
+                        Document_name
+                    </th>
+                    <th>
+                        Deliver_date
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <td>
+                            @obj.RId
+                        </td>
+                        <td>
+                            @obj.Date
+                        </td>
+                        <td>
+                            @obj.Paper
+                        </td>
+                        <td>
+                            @obj.Document_name
+                        </td>
+                        <td>
+                            @obj.Deliver_date
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        @*<ul class="list-group-horizontal" style="margin: -140px 0px 0px -36px; width:775px">
+            <li style="display:inline-block; margin:0px 0px 0px 20px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Date
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 55px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Printer
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 55px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Paper
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 55px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Document name
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 55px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Deliver time
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 55px">
+                <p style="font-weight:600; color:#666666; font-size:18px">
+                    Status
+                </p>
+            </li>
+        </ul>
+
+        <ul class="list-group-horizontal" style="margin: -5px 0px 0px -36px; width:800px">
+            <li style="display:inline-block; margin:0px 0px 0px 20px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Oct 12, 2024
+                    07:35:06 AM
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px -7px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Room 505A4
+                    D10 campus
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 10px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    20
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 0px; width:150px">
+                <p style="color:#666666; font-size:12px">
+                    discrete mathematics
+                    and its applications
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 42px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Oct 12, 2024
+                    08:00:00 AM
+                </p>
+            </li>
+            <li class="btn" style="width:80px; height:40px; background-color:#ea2b2b; margin:-15px 0px 0px 40px">
+                <p style="color:white; font-size:15px">Cancel</p>
+            </li>
+        </ul>
+
+        <ul class="list-group-horizontal" style="margin: -5px 0px 0px -36px; width:800px">
+            <li style="display:inline-block; margin:0px 0px 0px 20px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Oct 12, 2024
+                    07:35:06 AM
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px -7px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Room 505A4
+                    D10 campus
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 10px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    20
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 0px; width:150px">
+                <p style="color:#666666; font-size:12px">
+                    discrete mathematics
+                    and its applications
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 42px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Oct 12, 2024
+                    08:00:00 AM
+                </p>
+            </li>
+            <li class="btn" style="width:80px; height:40px; background-color:#fabc02; margin:-15px 0px 0px 40px">
+                <p style="color:white; font-size:15px">Waiting</p>
+            </li>
+        </ul>
+
+        <ul class="list-group-horizontal" style="margin: -5px 0px 0px -36px; width:800px">
+            <li style="display:inline-block; margin:0px 0px 0px 20px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Oct 12, 2024
+                    07:35:06 AM
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px -7px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Room 505A4
+                    D10 campus
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 10px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    20
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 0px; width:150px">
+                <p style="color:#666666; font-size:12px">
+                    discrete mathematics
+                    and its applications
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 42px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Oct 12, 2024
+                    08:00:00 AM
+                </p>
+            </li>
+            <li class="btn" style="width:80px; height:40px; background-color:#fabc02; margin:-15px 0px 0px 40px">
+                <p style="color:white; font-size:15px">Waiting</p>
+            </li>
+        </ul>
+
+        <ul class="list-group-horizontal" style="margin: -5px 0px 0px -36px; width:800px">
+            <li style="display:inline-block; margin:0px 0px 0px 20px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Oct 12, 2024
+                    07:35:06 AM
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px -7px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Room 505A4
+                    D10 campus
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 10px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    20
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 0px; width:150px">
+                <p style="color:#666666; font-size:12px">
+                    discrete mathematics
+                    and its applications
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 42px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Oct 12, 2024
+                    08:00:00 AM
+                </p>
+            </li>
+            <li class="btn" style="width:80px; height:40px; background-color:#d0ea2b; margin:-15px 0px 0px 40px">
+                <p style="color:white; font-size:15px">Done</p>
+            </li>
+        </ul>
+
+        <ul class="list-group-horizontal" style="margin: -5px 0px 0px -36px; width:800px">
+            <li style="display:inline-block; margin:0px 0px 0px 20px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Oct 12, 2024
+                    07:35:06 AM
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px -7px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Room 505A4
+                    D10 campus
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 10px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    20
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 0px; width:150px">
+                <p style="color:#666666; font-size:12px">
+                    discrete mathematics
+                    and its applications
+                </p>
+            </li>
+            <li style="display:inline-block; margin:0px 0px 0px 42px; width:100px">
+                <p style="color:#666666; font-size:12px">
+                    Oct 12, 2024
+                    08:00:00 AM
+                </p>
+            </li>
+            <li class="btn" style="width:80px; height:40px; background-color:#d0ea2b; margin:-15px 0px 0px 40px">
+                <p style="color:white; font-size:15px">Done</p>
+            </li>
+        </ul>*@
+    </div>
+
+    <div class="col-1" style="width:370px">
+        <div class="container" style="margin:27px 0px 0px 10px; display:inline-block; background-color:#fff1c5; width:320px; height:350px; border-radius:20px">
+            <p class="card-img-overlay" style="color:black; font-size:30px; font-weight:600; margin: 50px 0px 0px 1200px">My transaction</p>
+            <p class="card-img-overlay" style="color:#7d7d7d; font-size:16px; margin: 90px 0px 0px 1250px">Since 1/1/2024</p>
+            <p class="card-img-overlay" style="color:#7d7d7d; font-size:16px; margin: 150px 0px 0px 1185px">Paper sheets</p>
+            <b class="card-img-overlay" style="color:#fabc02; font-size:18px; margin: 180px 0px 0px 1350px">-38</b>
+            <p class="card-img-overlay" style="color:#7d7d7d; font-size:16px; margin: 210px 0px 0px 1185px">Request made</p>
+            <b class="card-img-overlay" style="color:#fabc02; font-size:18px; margin: 240px 0px 0px 1350px">7</b>
+            <p class="card-img-overlay" style="color:#7d7d7d; font-size:16px; margin: 270px 0px 0px 1185px">Request made</p>
+            <b class="card-img-overlay" style="color:#fabc02; font-size:18px; margin: 300px 0px 0px 1350px">-38.000đ</b>
+        </div>
+
+        <p style="color:#666666; font-weight:600; font-size:24px; margin:10px">Overview</p>
+
+        <div class="container" style="margin:0px 0px 0px 10px; display:inline-block; background-color:#f8ffcc; width:320px; height:115px; border-radius:20px">
+            <p style="color:#03B91E; font-size:50px; margin:20px 0px 0px 0px">
+                <i class="bi bi-files"></i>
+            </p>
+            <b class="card-img-overlay" style="color:#666666; font-size:30px; margin: 444px 0px 0px 1250px">30</b>
+            <p class="card-img-overlay" style="color:#666666; font-size:15px; margin: 480px 0px 0px 1250px">paper sheets left</p>
+        </div>
+        <div class="container" style="margin:20px 0px 0px 10px; display:inline-block; background-color:#f8ffcc; width:320px; height:115px; border-radius:20px">
+            <p style="color:#03B91E; font-size:50px; margin:20px 0px 0px 0px">
+                <i class="bi bi-alarm"></i>
+            </p>
+            <b class="card-img-overlay" style="color:#666666; font-size:30px; margin: 579px 0px 0px 1250px">2</b>
+            <p class="card-img-overlay" style="color:#666666; font-size:15px; margin: 615px 0px 0px 1250px">requests in queue</p>
+        </div>
+    </div>
+</div>

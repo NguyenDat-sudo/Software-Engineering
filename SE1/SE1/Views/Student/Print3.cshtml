@@ -1,0 +1,226 @@
+﻿@model SE1.Models.dto.Print3DTO;
+
+@{
+    var Tempfile = TempData["file"];
+}
+
+@{
+    ViewData["Title"] = "Print3";
+}
+
+<form class="row position-fixed" method="post">
+    <div class="col-1" style="width:370px; height:755px; padding:20px 20px 20px 20px; border:1px solid #ababab">
+        <div class="btn-group" role="group">
+            <a asp-controller="Home" asp-action="Index" class="btn" style="padding:0px 0px 0px 20px">
+                <img style="height:60px; width:60px" src="@Url.Content("~/Images/printer.png")" />
+            </a>
+
+            <a asp-controller="Home" asp-action="Index" class="btn">
+                <b style="color:#666666; font-size:24px; text-align:center; padding:0px">smart</b>
+                <i style="color:#fabc02; font-size:18px; text-align:center; padding:0px">printing service</i>
+            </a>
+        </div>
+
+        <a asp-controller="Student" asp-action="Dashboard" class="btn" style="width:150px; height:40px; margin:30px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px">
+                <i class="bi bi-person-circle"></i> Dashboard
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Print" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <b style="display:inline-block; color:#666666; font-size:18px; padding:0px 50px 0px 0px">
+                <i class="bi bi-folder2"></i> Print
+            </b>
+        </a>
+        <a asp-controller="Student" asp-action="ViewHistory1" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-skip-start"></i> History
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Notification" class="btn" style="width:160px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 2px 0px 0px">
+                <i class="bi bi-bell"></i> Notification
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Setting_Profile" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-gear"></i> Setting
+            </p>
+        </a>
+
+        <div style="margin:250px 0px 0px 10px; border:3px solid #ababab; border-radius:10px; width:320px; height:95px">
+            <img style="width:90px; height:90px; margin-bottom:40px; border-radius:8px; display:inline-block" src="https://www.theemotionmachine.com/wp-content/uploads/2021/03/53d05da0-19c1-48f8-ac0d-9a57498a4697.jpeg" />
+            <div class="" style="display:inline-block; margin-top:10px">
+                <p style="font-weight:600; color:#ababab; font-size:18px; padding:0px 0px 0px 10px">
+                    Dat Nguyen
+                </p>
+
+                <p style="font-weight:600; color:#ababab; font-size:10px; padding:0px 0px 0px 10px">
+                    dat.nguyentrinh@hcmut.edu.vn
+                </p>
+            </div> <i class="bi bi-box-arrow-right col-1" style="color:#ababab; font-size:60px"></i>
+        </div>
+    </div>
+    <div class="col-1" style="width:70%; height:755px;">
+        <!-- Header -->
+        <div class="" style="color:#666666; margin-bottom: 50px; margin-top: 25px; margin-left:12px;">
+            <div style="color:#666666; font-size:30px; font-weight:600; margin-left:0px; margin-top:25px">
+                Printing service
+            </div>
+            <ul style="display:inline-flex; list-style:none; width:1000px; margin: 0px 0px 0px -32px">
+                <li class="bi bi-check-circle-fill" style="color:#fabc02; font-size:50px"></li>
+                <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Upload the document</li>
+                <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+                <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+
+                <li class="bi bi-check-circle-fill" style="color:#fabc02; font-size:50px; margin-left:10px"></li>
+                <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Print configuration</li>
+                <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+                <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+
+                <li class="bi bi-3-circle" style="color:#666666; font-size:50px; margin-left:10px; font-weight:600"></li>
+                <li style="font-size:18px; color:#666666; font-weight:600; margin:25px 0px 0px 10px">Printer location & time</li>
+                <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+                <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+
+                <li class="bi bi-4-circle" style="color:#ababab; font-size:50px; margin-left:10px"></li>
+                <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Preview</li>
+            </ul>
+        </div>
+        <div class="row">
+            <!-- Document Preview -->
+            <div class="col-2" style="width:60%; display:block; margin-right:30px; margin-left: 16px;">
+                <!--div class="card mb-4">-->
+                <div class="card-body p-0" style="margin-top:-30px">
+                    @Html.Raw(TempData["file"])
+                </div>
+                <!--</>-->
+            </div>
+
+            <div class="col-2" style="width:300px; display:block; margin-top:-35px">
+
+                <!-- Print Configuration Form -->
+
+                <form asp-controller="Student" asp-action="Print4">
+                    <div class="mb-1" style="color:#666666">
+                        <label for="page-range" class="form-label-page-range mb-2" style="font-size:18px;"><b>Page range</b></label>
+                        <input asp-for="pageRange"
+                               id="page-range"
+                               class="form-control-page"
+                               style="border-width:1px; border-color:#666666; border-radius:10px; padding: 10px 4px; width:314px; height: 46px;"
+                               required />
+                    </div>
+                    <p style="font-size:14px; color:#ababab; margin-bottom:8px">For example: 1; 2-12; 3-6,12-21;...</p>
+
+                    <div class="mb-3" style="color:#666666">
+                        <label for="no-of-copies" class="form-label-copies mb-2" style="font-size:18px"><b>No of copy</b></label>
+                        <input asp-for="numberOfCopies" id="no-of-copies" class="form-control-copies" min="1"
+                               style="border-width:1px; border-color:#666666; border-radius:10px; padding: 10px 4px; width:314px; height: 46px;"
+                               required />
+                    </div>
+
+                    <div class="mb-1" style="color:#666666;">
+                        <label class="form-label-print" style="font-size:18px; margin-bottom:1px"><b>Orientation</b></label>
+                        <div style="display: flex; align-items: center; gap: 0px;">
+                            <div class="form-check col" style="display: flex; align-items: center; gap: 10px;">
+                                <input asp-for="orientation" type="radio" style="accent-color:#000003"
+                                       id="portrait"
+                                       name="orientation"
+                                       value="portrait"
+                                       class="form-check-input"
+                                       checked />
+                                <label for="portrait" class="form-check-label">Portrait</label>
+                            </div>
+                            <div class="form-check col" style="display: flex; align-items: center; gap: 10px;">
+                                <input asp-for="orientation" type="radio"
+                                       id="landscape"
+                                       name="orientation"
+                                       value="landscape"
+                                       class="form-check-input" />
+                                <label for="landscape" class="form-check-label">Landscape</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-1" style="color:#666666;">
+                        <label class="form-label-print" style="font-size:18px; margin-bottom:1px"><b>Paper size</b></label>
+                        <div style="display: flex; align-items: center; gap: 0px;">
+                            <div class="form-check col" style="display: flex; align-items: center; gap: 10px;">
+                                <input name="paperSize" type="radio"
+                                       id="a4"
+                                       value="a4"
+                                       class="form-check-input"
+                                       checked />
+                                <label for="a4" class="form-check-label">A4</label>
+                            </div>
+                            <div class="form-check col" style="display: flex; align-items: center; gap: 10px;">
+                                <input name="paperSize" type="radio"
+                                       id="a3"
+                                       value="a3"
+                                       class="form-check-input" />
+                                <label for="a3" class="form-check-label">A3</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-1" style="color:#666666;">
+                        <label class="form-label-print" style="font-size:18px; margin-bottom:1px"><b>Printed sides</b></label>
+                        <div style="display: flex; align-items: center; gap: 0px;">
+                            <div class="form-check col" style="display: flex; align-items: center; gap: 10px;">
+                                <input name="printedSides" type="radio"
+                                       id="double-sided"
+                                       value="double-sided"
+                                       class="form-check-input"
+                                       checked />
+                                <label for="double-sided" class="form-check-label">Double-sided</label>
+                            </div>
+                            <div class="form-check col" style="display: flex; align-items: center; gap: 10px;">
+                                <input name="printedSides" type="radio"
+                                       id="single-sided"
+                                       value="single-sided"
+                                       class="form-check-input" />
+                                <label for="single-sided" class="form-check-label">Single-sided</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-1" style="color:#666666;">
+                        <label class="form-label-print" style="font-size:18px; margin-bottom:1px"><b>Color</b></label>
+                        <div style="display: flex; align-items: center; gap: 0px;margin-bottom:30px">
+                            <div class="form-check col" style="display: flex; align-items: center; gap: 10px;">
+                                <input asp-for="color" type="radio"
+                                       id="black-white"
+                                       name="color"
+                                       value="black-white"
+                                       class="form-check-input"
+                                       checked />
+                                <label for="black-white" class="form-check-label">Black & white</label>
+                            </div>
+                            <div class="form-check col" style="display: flex; align-items: center; gap: 10px;">
+                                <input asp-for="color" type="radio"
+                                       id="colored"
+                                       name="color"
+                                       value="colored"
+                                       class="form-check-input" />
+                                <label for="colored" class="form-check-label">Colored</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="d-flex justify-content-start">
+                        <a asp-controller="Student" asp-action="Print2">
+                            <div type="button" class="btn btn-outline-warning" style="width:152px; height: 47px; padding-top:9px; margin-right:20px; border-radius:8px; font-size:15px; border-width:2px">
+                                Previous step
+                            </div>
+                        </a>
+
+                        <input type="submit" value="Next step" class="btn btn-primary" style="width:130px; height: 47px; padding-top: 5px; color:white;border-radius:8px; font-size:15px; background-color:#fabc02; border:none" />
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</form>

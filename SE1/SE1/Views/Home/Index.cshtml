@@ -1,0 +1,200 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewData["Title"] = "ShowImagesFromFolder";
+}
+
+<div class="header" style="padding:10px 0px 10px 10px; border:1px solid #ababab">
+    <div class="btn-group" role="group" >
+        <a asp-controller="Home" asp-action="Index" class="btn" style="padding:0px">
+            <img style="height:100px; width:100px" src="@Url.Content("~/Images/printer.png")" />
+        </a>
+
+        <a asp-controller="Home" asp-action="Index" class="btn">
+            <b style="color:#666666; font-size:48px; text-align:center; padding:5px">smart</b>
+            <i style="color:#fabc02; font-size:36px; text-align:center; padding:5px">printing service</i>
+        </a>
+    </div>
+
+    <div class="btn-group" role="group" style="position: absolute; right:20px; top:26px">
+        <a href="https://mybk.hcmut.edu.vn/my/homeSSO.action" class="btn" style="background-color:white; border:5px solid; border-color:#fabc02; width:304px; height:70px; border-radius:20px">
+            <p class="" style="color:#fabc02; text-align:center; font-size:24px; padding:5px 0px"> Back To Mainpage</p>
+        </a>
+        <a style="width:20px"></a>
+        <a asp-controller="Home" asp-action="Login" class="btn" style="background-color:#fabc02; width:227px; height:70px; border-radius:20px">
+            <p class="" style="color:white; text-align:center; font-size:24px; padding:8px 0px">Print Document</p>
+        </a>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-1" style="width:600px; margin-top:200px">
+        <p style="font-weight:600; color:#666666; font-size:60px; line-height:65px; padding:0px 0px 0px 12px">
+            Print your document right now at school!
+        </p>
+        <i style="font-weight:600; color:#ababab; font-size:24px; padding:0px 0px 0px 12px">
+            Prepare your lectures thoroughtly and quickly
+        </i>
+        <a asp-controller="Home" asp-action="Login" class="btn" style="background-color:#fabc02; width:180px; height:70px; border-radius:20px; margin:10px 0px 0px 12px">
+            <p class="" style="color:white; text-align:center; font-size:24px; padding:8px 0px">Print now!</p>
+        </a>
+    </div>
+
+    <div class="col-1">
+        <img style="width:913px; height:750px" src="@Url.Content("~/Images/unilab_heat_transfer_software_blog_work_from_home_print-scaled.jpg")" />
+    </div>
+</div>
+
+<p style="font-weight:600; color:#666666; font-size:48px; line-height:65px; text-align:center; padding:20px 0px 0px 12px">
+    Our offered services
+</p>
+
+<div>
+    <ul class="list-group-horizontal" style="padding:0px 12px 0px 30px">
+        <li style="display:inline-block; padding:10px 0px 0px 10px">
+            <img class="col-1" style="height:50px; width:50px" src="@Url.Content("~/Images/post-it.png")" />
+        </li>
+        <li style="display:inline-block">
+            <p style="font-weight:600; color:#666666; font-size:30px; padding:10px 0px 0px 10px">
+                Doublesided printing
+            </p>
+        </li>
+        <li style="display:inline-block; padding:10px 0px 0px 80px">
+            <img class="col-1" style="height:50px; width:50px" src="@Url.Content("~/Images/color-pencils.png")" />
+        </li>
+        <li style="display:inline-block">
+            <p style="font-weight:600; color:#666666; font-size:30px; padding:10px 0px 0px 10px">
+                Color printing
+            </p>
+        </li>
+        <li style="display:inline-block; padding:10px 0px 0px 80px">
+            <img class="col-1" style="height:50px; width:50px" src="@Url.Content("~/Images/paper.png")" />
+        </li>
+        <li style="display:inline-block">
+            <p style="font-weight:600; color:#666666; font-size:30px; padding:10px 0px 0px 10px">
+                Free paper
+            </p>
+        </li>
+        <li style="display:inline-block; padding:10px 0px 0px 80px">
+            <img class="col-1" style="height:50px; width:50px" src="@Url.Content("~/Images/handcraft.png")" />
+        </li>
+        <li style="display:inline-block">
+            <p style="font-weight:600; color:#666666; font-size:30px; padding:10px 0px 0px 10px">
+                In hurry? Don’t worry!
+            </p>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <ul class="list-group-horizontal" style="padding:0px 12px 0px 30px">
+        <li style="display:inline-block; padding:0px 0px 0px 75px; width:390px">
+            <p style="font-weight:600; color:#ababab; font-size:20px">
+                Save the papers with double-side printing
+            </p>
+        </li>
+        <li style="display:inline-block; padding:0px 0px 0px 120px; width:390px">
+            <p style="font-weight:600; color:#ababab; font-size:20px">
+                Want to have a vibrant project? We can do it!
+            </p>
+        </li>
+        <li style="display:inline-block; padding:0px 0px 0px 63px; width:280px">
+            <p style="font-weight:600; color:#ababab; font-size:20px">
+                We give some free papers every semester!
+            </p>
+        </li>
+        <li style="display:inline-block; padding:0px 0px 0px 73px; width:280px">
+            <p style="font-weight:600; color:#ababab; font-size:20px">
+                Your documents will be process fast
+            </p>
+        </li>
+    </ul>
+</div>
+
+<div class="row">
+    <div class="col-1" style="width:600px">
+        <p style="font-weight:600; color:#666666; font-size:60px; padding:0px 0px 0px 30px">
+            Common question
+        </p>
+        <p style="font-weight:600; color:#ababab; font-size:24px; padding:0px 0px 0px 30px">
+            If you cannot find the questions that you are looking for, please contact our support team
+        </p>
+    </div>
+
+    <div class="col-1">
+        <p style="display:inline-block; width:800px; font-weight:600; color:#666666; font-size:30px; padding:30px 0px 0px 10px">
+            <i class="bi bi-caret-down"></i> What is HCMUT_SSPS?
+        </p>
+        <p style="width:800px; font-weight:600; color:#ababab; font-size:24px; padding:0px 0px 0px 50px">
+            The university is intent to build a Student Smart Printing Service (HCMUT_SSPS) for serving students in its campuses to print their documents.
+        </p>
+        <p style="display:inline-block; width:800px; font-weight:600; color:#666666; font-size:30px; padding:0px 0px 0px 10px">
+            <i class="bi bi-caret-right-fill"></i> How to use the service?
+        </p>
+        <p style="display:inline-block; width:800px; font-weight:600; color:#666666; font-size:30px; padding:0px 0px 0px 10px">
+            <i class="bi bi-caret-right-fill"></i> What if I don’t receive my order?
+        </p>
+        <p style="display:inline-block; width:800px; font-weight:600; color:#666666; font-size:30px; padding:0px 0px 0px 10px">
+            <i class="bi bi-caret-right-fill"></i> How many papers do I receive a semester?
+        </p>
+        <p style="display:inline-block; width:800px; font-weight:600; color:#666666; font-size:30px; padding:0px 0px 0px 10px">
+            <i class="bi bi-caret-right-fill"></i> How to buy some extra papers?
+        </p>
+        <p style="display:inline-block; width:800px; font-weight:600; color:#666666; font-size:30px; padding:0px 0px 0px 10px">
+            <i class="bi bi-caret-right-fill"></i> How long does it take to print a document?
+        </p>
+    </div>
+</div>
+
+<div class="row" style="background-color:#fabc02; height:300px; margin:50px 0px 0px 0px">
+    <div class="col-1" style="width:600px">
+        <img style="height:100px; width:100px; margin:20px 0px 0px 30px" src="@Url.Content("~/Images/printer.png")" />
+        <a asp-controller="Home" asp-action="Index" class="btn">
+            <b style="color:#666666; font-size:48px; text-align:center; padding:5px 0px 0px 30px">smart</b>
+            <i style="color:white; font-size:36px; text-align:center; padding:5px">printing service</i>
+        </a>
+        <p style="font-weight:600; color:white; font-size:24px; padding:20px 0px 0px 30px">
+            Smart printing service is a service belongs to HCMUT_SSPS aiming to help student in printing service
+        </p>
+    </div>
+
+    <div class="col" style="width:600px; padding:20px 0px 0px 70px">
+        <p style="font-weight:600; color:white; font-size:36px; padding:0px 0px 0px 30px">
+            Help center 
+        </p>
+        <p style="font-weight:600; color:white; font-size:20px; padding:0px 0px 0px 30px">
+            Phone number 
+        </p>
+        <p style="color:white; font-size:20px; padding:0px 0px 0px 30px">
+            (+84) 999 999 999
+        </p>
+        <p style="font-weight:600; color:white; font-size:20px; padding:0px 0px 0px 30px">
+            Email 
+        </p>
+        <p style="color:white; font-size:20px; padding:0px 0px 0px 30px">
+            ssps@hcmut.edu.vn
+        </p>
+    </div>
+
+    <div class="col" style="width:600px; padding:20px 0px 0px 70px; margin:0px 0px 0px 0px">
+        <p style="font-weight:600; color:white; font-size:36px; padding:0px 0px 0px 30px">
+            Referrences
+        </p>
+        <p style="font-weight:600; color:white; font-size:20px; padding:0px 0px 0px 30px">
+            MyBK
+        </p>
+        <p style="font-weight:600; color:white; font-size:20px; padding:0px 0px 0px 30px">
+            LMS
+        </p>
+        <p style="font-weight:600; color:white; font-size:20px; padding:0px 0px 0px 30px">
+            BKPay
+        </p>
+        <p style="font-weight:600; color:white; font-size:20px; padding:0px 0px 0px 30px">
+            HCMUT
+        </p>
+    </div>
+
+</div>
+
+

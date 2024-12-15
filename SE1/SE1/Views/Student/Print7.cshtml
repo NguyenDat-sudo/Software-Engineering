@@ -1,0 +1,101 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewData["Title"] = "ShowImagesFromFolder";
+}
+
+<div class="row position-fixed" style="display: flex; width: 100%; margin: 0; padding: 0; box-sizing: border-box;">
+    <!-- Sidebar Section -->
+    <div class="col-1" style="width:370px; height:755px; padding:20px 20px 20px 20px; border:1px solid #ababab">
+        <div class="btn-group" role="group">
+            <a asp-controller="Home" asp-action="Index" class="btn" style="padding:0px 0px 0px 20px">
+                <img style="height:60px; width:60px" src="@Url.Content("~/Images/printer.png")" />
+            </a>
+
+            <a asp-controller="Home" asp-action="Index" class="btn">
+                <b style="color:#666666; font-size:24px; text-align:center; padding:0px">smart</b>
+                <i style="color:#fabc02; font-size:18px; text-align:center; padding:0px">printing service</i>
+            </a>
+        </div>
+
+        <a asp-controller="Student" asp-action="Dashboard" class="btn" style="width:150px; height:40px; margin:30px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px">
+                <i class="bi bi-person-circle"></i> Dashboard
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Print" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <b style="display:inline-block; color:#666666; font-size:18px; padding:0px 50px 0px 0px">
+                <i class="bi bi-folder2"></i> Print
+            </b>
+        </a>
+        <a asp-controller="Student" asp-action="ViewHistory1" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-skip-start"></i> History
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Notification" class="btn" style="width:160px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 2px 0px 0px">
+                <i class="bi bi-bell"></i> Notification
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Setting_Profile" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-gear"></i> Setting
+            </p>
+        </a>
+
+        <div style="margin:250px 0px 0px 10px; border:3px solid #ababab; border-radius:10px; width:320px; height:95px">
+            <img style="width:90px; height:90px; margin-bottom:40px; border-radius:8px; display:inline-block" src="https://www.theemotionmachine.com/wp-content/uploads/2021/03/53d05da0-19c1-48f8-ac0d-9a57498a4697.jpeg" />
+            <div class="" style="display:inline-block; margin-top:10px">
+                <p style="font-weight:600; color:#ababab; font-size:18px; padding:0px 0px 0px 10px">
+                    Dat Nguyen
+                </p>
+
+                <p style="font-weight:600; color:#ababab; font-size:10px; padding:0px 0px 0px 10px">
+                    dat.nguyentrinh@hcmut.edu.vn
+                </p>
+            </div> <i class="bi bi-box-arrow-right col-1" style="color:#ababab; font-size:60px"></i>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="header" style="color:#666666; margin-bottom: 50px; margin-top: 15px; margin-left:12px; width:1000px">
+        <div style="color:#666666; font-size:30px; font-weight:600; margin-left:0px; margin-top:25px">
+            Printing service
+        </div>
+        <ul style="display:inline-flex; list-style:none; width:1000px; margin: 0px 0px 0px -32px">
+            <li class="bi bi-check-circle-fill" style="color:#fabc02; font-size:50px"></li>
+            <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Upload the document</li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+
+            <li class="bi bi-check-circle-fill" style="color:#fabc02; font-size:50px; margin-left:10px"></li>
+            <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Print configuration</li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+
+            <li class="bi bi-check-circle-fill" style="color:#fabc02; font-size:50px; margin-left:10px"></li>
+            <li style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px">Printer location & time</li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px 10px"></li>
+            <li class="bi bi-caret-right-fill" style="font-size:18px; color:#ababab; margin:25px 0px 0px -10px"></li>
+
+            <li class="bi bi-check-circle-fill" style="color:#fabc02; font-size:50px; margin-left:10px"></li>
+            <li style="font-size:18px; color:#ababab; font-weight:600; margin:25px 0px 0px 10px">Preview</li>
+        </ul>
+
+        <div style="height:70%;flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: 0px">
+            <!-- Checkmark Icon -->
+            <div style="width: 150px; height: 150px; border: 10px solid #d0ea2b; border-radius: 50%; display: flex; align-items: center; justify-content: center; background-color: #fff;">
+                <i class="bi bi-check" style="font-size: 100px; color: #d0ea2b;"></i>
+            </div>
+            <!-- Message -->
+            <div class="message" style="font-size: 24px; color: #666666; font-weight: bold; margin-top: 30px;">Request is submited!</div>
+        </div>
+
+        <a asp-controller="Student" asp-action="Print" class="btn btn-primary" style="background-color:#fabc02; width:280px; height:70px; border-radius:20px; margin:-100px 0px 0px 350px; border:None">
+            <p class="" style="color:white; text-align:center; font-size:24px; padding:8px 0px">Back to index</p>
+        </a>
+    </div>
+</div>
+
+

@@ -1,0 +1,111 @@
+﻿@model Printer2
+
+@{
+    ViewData["Title"] = "ShowImagesFromFolder";
+}
+
+<div class="row position-fixed">
+    <div class="col-1" style="width:370px; height:755px; padding:20px 20px 20px 20px; border:1px solid #ababab">
+        <div class="btn-group" role="group">
+            <a asp-controller="Home" asp-action="Index" class="btn" style="padding:0px 0px 0px 20px">
+                <img style="height:60px; width:60px" src="@Url.Content("~/Images/printer.png")" />
+            </a>
+
+            <a asp-controller="Home" asp-action="Index" class="btn">
+                <b style="color:#666666; font-size:24px; text-align:center; padding:0px">smart</b>
+                <i style="color:#fabc02; font-size:18px; text-align:center; padding:0px">printing service</i>
+            </a>
+        </div>
+
+        <a asp-controller="SSPS" asp-action="Dashboard" class="btn" style="width:150px; height:40px; margin:30px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px">
+                <i class="bi bi-person-circle"></i> Dashboard
+            </p>
+        </a>
+        <a asp-controller="SSPS" asp-action="PrinterList" class="btn" style="width:350px; height:40px; margin:10px 0px 0px -16px">
+            <b style="display:inline-block; color:#666666; font-size:18px; padding:0px 50px 0px 0px">
+                <i class="bi bi-folder2"></i> Printer Management
+            </b>
+        </a>
+        <a asp-controller="SSPS" asp-action="ViewHistory" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-skip-start"></i> History
+            </p>
+        </a>
+        <a asp-controller="SSPS" asp-action="UserList" class="btn" style="width:160px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 2px 0px 0px">
+                <i class="bi bi-bell"></i> Notification
+            </p>
+        </a>
+        <a asp-controller="SSPS" asp-action="Report" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-gear"></i> Setting
+            </p>
+        </a>
+
+        <div style="margin:270px 0px 0px 10px; border:3px solid #ababab; border-radius:10px; width:320px; height:95px">
+            <img style="width:90px; height:90px; margin-bottom:40px; border-radius:8px; display:inline-block" src="https://www.theemotionmachine.com/wp-content/uploads/2021/03/53d05da0-19c1-48f8-ac0d-9a57498a4697.jpeg" />
+            <div class="" style="display:inline-block; margin-top:10px">
+                <p style="font-weight:600; color:#ababab; font-size:18px; padding:0px 0px 0px 10px">
+                    Dat Nguyen
+                </p>
+
+                <p style="font-weight:600; color:#ababab; font-size:10px; padding:0px 0px 0px 10px">
+                    dat.nguyentrinh@hcmut.edu.vn
+                </p>
+            </div> <i class="bi bi-box-arrow-right col-1" style="color:#ababab; font-size:60px"></i>
+        </div>
+
+    </div>
+
+    <form method="post" class="col-1" style="width:780px; height:755px; margin-top:30px; margin-left:20px">
+        <input asp-for="Id" hidden />
+        <div class="border p-3 mt-4">
+            <div class="row pb-2">
+                <h2 class="" style="color:#666666">Delete Printer</h2>
+                <hr />
+            </div>
+
+            <div asp-validation-summary="ModelOnly"></div>
+
+            <div class="mb-3 row p-1">
+                <label asp-for="Name" class="p-0"></label>
+                <input asp-for="Name" type="text" class="form-control" disabled/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="mb-3 row p-1">
+                <label asp-for="Location" class="p-0"></label>
+                <input asp-for="Location" type="text" class="form-control" disabled />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+
+            <div class="form-check col" style="display: flex; align-items: center; gap: 10px;">
+                <input asp-for="Active" type="radio"
+                id="active"
+                value="active"
+                class="form-check-input"
+                checked disabled />
+                <label for="active" class="form-check-label">Active</label>
+            </div>
+            <div class="form-check col" style="display: flex; align-items: center; gap: 10px; margin-bottom:20px">
+                <input asp-for="Active" type="radio"
+                id="inactive"
+                value="inactive"
+                class="form-check-input" disabled />
+                <label for="inactive" class="form-check-label">Inactive</label>
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <button type="submit" class="btn btn-danger form-control" style="background-color:#fabc02; border:none">Delete</button>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a asp-controller="SSPS" asp-action="PrinterList" class="btn btn-secondary form-control">
+                        Back to list
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

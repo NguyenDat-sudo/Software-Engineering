@@ -1,0 +1,381 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SE1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SE1.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Documents\\BTL1.pdf",
+      "PackagePath": "staticwebassets\\Documents\\BTL1.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Documents\\DB.pdf",
+      "PackagePath": "staticwebassets\\Documents\\DB.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Documents\\PROBABILITY-AND-STATISTICS_CC08_GROUP-3.pdf",
+      "PackagePath": "staticwebassets\\Documents\\PROBABILITY-AND-STATISTICS_CC08_GROUP-3.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Documents\\database_report.pdf",
+      "PackagePath": "staticwebassets\\Documents\\database_report.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\ava.jpg",
+      "PackagePath": "staticwebassets\\Images\\ava.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\circle-2.png",
+      "PackagePath": "staticwebassets\\Images\\circle-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\circle-3.png",
+      "PackagePath": "staticwebassets\\Images\\circle-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\circle-4.png",
+      "PackagePath": "staticwebassets\\Images\\circle-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\circle_done.png",
+      "PackagePath": "staticwebassets\\Images\\circle_done.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\clock.png",
+      "PackagePath": "staticwebassets\\Images\\clock.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\color-pencils.png",
+      "PackagePath": "staticwebassets\\Images\\color-pencils.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\handcraft.png",
+      "PackagePath": "staticwebassets\\Images\\handcraft.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\paper.png",
+      "PackagePath": "staticwebassets\\Images\\paper.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\post-it.png",
+      "PackagePath": "staticwebassets\\Images\\post-it.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\printer.png",
+      "PackagePath": "staticwebassets\\Images\\printer.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\right-arrow.png",
+      "PackagePath": "staticwebassets\\Images\\right-arrow.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\sheet.png",
+      "PackagePath": "staticwebassets\\Images\\sheet.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\tree.png",
+      "PackagePath": "staticwebassets\\Images\\tree.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\tải xuống.jpg",
+      "PackagePath": "staticwebassets\\Images\\tải xuống.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\Images\\unilab_heat_transfer_software_blog_work_from_home_print-scaled.jpg",
+      "PackagePath": "staticwebassets\\Images\\unilab_heat_transfer_software_blog_work_from_home_print-scaled.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\css\\ViewHistory.css",
+      "PackagePath": "staticwebassets\\css\\ViewHistory.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\css\\homeLogin.css",
+      "PackagePath": "staticwebassets\\css\\homeLogin.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\js\\ViewHistory.js",
+      "PackagePath": "staticwebassets\\js\\ViewHistory.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\uploads\\2252147_NguyenTrinhTienDat_1a.pdf",
+      "PackagePath": "staticwebassets\\uploads\\2252147_NguyenTrinhTienDat_1a.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\uploads\\2252147_NguyenTrinhTienDat_7b.docx",
+      "PackagePath": "staticwebassets\\uploads\\2252147_NguyenTrinhTienDat_7b.docx"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\uploads\\BTL1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\BTL1.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\uploads\\DB.pdf",
+      "PackagePath": "staticwebassets\\uploads\\DB.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\uploads\\PROBABILITY-AND-STATISTICS_CC08_GROUP-3.pdf",
+      "PackagePath": "staticwebassets\\uploads\\PROBABILITY-AND-STATISTICS_CC08_GROUP-3.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\SE1\\SE1\\wwwroot\\uploads\\database_report.pdf",
+      "PackagePath": "staticwebassets\\uploads\\database_report.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SE1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SE1.props",
+      "PackagePath": "build\\SE1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SE1.props",
+      "PackagePath": "buildMultiTargeting\\SE1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SE1.props",
+      "PackagePath": "buildTransitive\\SE1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,118 @@
+﻿@model SE1.Models.dto.ViewHistoryDTO;
+
+@{
+    ViewData["Title"] = "ViewHistory1";
+}
+
+<div class="row position-fixed">
+    <div class="col-1" style="width:370px; height:755px; padding:20px 20px 20px 20px; border:1px solid #ababab">
+        <div class="btn-group" role="group">
+            <a asp-controller="Home" asp-action="Index" class="btn" style="padding:0px 0px 0px 20px">
+                <img style="height:60px; width:60px" src="@Url.Content("~/Images/printer.png")" />
+            </a>
+
+            <a asp-controller="Home" asp-action="Index" class="btn">
+                <b style="color:#666666; font-size:24px; text-align:center; padding:0px">smart</b>
+                <i style="color:#fabc02; font-size:18px; text-align:center; padding:0px">printing service</i>
+            </a>
+        </div>
+
+        <a asp-controller="Student" asp-action="Dashboard" class="btn" style="width:150px; height:40px; margin:30px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px">
+                <i class="bi bi-person-circle"></i> Dashboard
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Print" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 50px 0px 0px">
+                <i class="bi bi-folder2"></i> Print
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="ViewHistory1" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <b style="display:inline-block; color:#666666; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-skip-start"></i> History
+            </b>
+        </a>
+        <a asp-controller="Student" asp-action="Notification" class="btn" style="width:160px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 2px 0px 0px">
+                <i class="bi bi-bell"></i> Notification
+            </p>
+        </a>
+        <a asp-controller="Student" asp-action="Setting_Profile" class="btn" style="width:150px; height:40px; margin:10px 0px 0px 20px">
+            <p style="display:inline-block; color:#ababab; font-size:18px; padding:0px 30px 0px 0px">
+                <i class="bi bi-gear"></i> Setting
+            </p>
+        </a>
+
+        <div style="margin:270px 0px 0px 10px; border:3px solid #ababab; border-radius:10px; width:320px; height:95px">
+            <img style="width:90px; height:90px; margin-bottom:40px; border-radius:8px; display:inline-block" src="https://www.theemotionmachine.com/wp-content/uploads/2021/03/53d05da0-19c1-48f8-ac0d-9a57498a4697.jpeg" />
+            <div class="" style="display:inline-block; margin-top:10px">
+                <p style="font-weight:600; color:#ababab; font-size:18px; padding:0px 0px 0px 10px">
+                    Dat Nguyen
+                </p>
+
+                <p style="font-weight:600; color:#ababab; font-size:10px; padding:0px 0px 0px 10px">
+                    dat.nguyentrinh@hcmut.edu.vn
+                </p>
+            </div> <i class="bi bi-box-arrow-right col-1" style="color:#ababab; font-size:60px"></i>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="col-1" style="width:60%; height:755px; padding:20px 20px 20px 20px;">
+        <!-- Header -->
+        <div class="header" style="color:#666666; margin-bottom: 50px; margin-top: 15px; margin-left:22px;">
+            <h3 style="font-size:24px; margin-bottom:35px;"><b>View History</b></h3>
+        </div>
+
+
+        <div class="container custom-container">
+            <form asp-controller="Student" asp-action="ViewHistory2">
+                <div class="row">
+
+                    <!-- Start Date -->
+                    <div class="col-md-3" style="margin-right:50px">
+                        <div class="mb-3">
+                            <label for="start-date" class="form-label">Start date</label>
+                            <input asp-for="startDate" type="date" id="start-date" class="form-control" placeholder="DD/MM/YYYY" required />
+
+                        </div>
+
+                    </div>
+                    <!-- End Date -->
+                    <div class="col-md-3" style="margin-right:50px">
+                        <div class="mb-3">
+                            <label for="end-date" class="form-label">End date</label>
+                            <input asp-for="endDate" type="date" id="end-date" class="form-control" placeholder="DD/MM/YYYY" required />
+                        </div>
+                    </div>
+                    <!-- Printer -->
+                    <div class="col-md-2" style="margin-right:50px">
+                        <label for="printer-select" class="form-label">Printer</label>
+                        <select asp-for="printer" id="printer-select" class="form-select" required>
+                            <option selected>Select</option>
+                            <option value="printer1">Printer 1</option>
+                            <option value="printer2">Printer 2</option>
+                        </select>
+                    </div>
+                    <!-- Search Button -->
+
+                    <div class="col-md-1 d-flex align-items-center" style="margin-top:10px">
+
+                        <button type="submit" id="search-btn" class="btn btn-warning" style="padding: 4px 20px; width:110px;height:43px; border-radius:10px;color:white;font-size:20px;font-weight:500">Search</button>
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
